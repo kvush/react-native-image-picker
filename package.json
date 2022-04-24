@@ -24,7 +24,8 @@
     "start": "react-native start",
     "example": "yarn --cwd example",
     "prepare": "bob build",
-    "ci:publish": "yarn semantic-release"
+    "ci:publish": "yarn semantic-release",
+    "postinstall": "patch-package"
   },
   "keywords": [
     "react-native",
@@ -62,5 +63,8 @@
   },
   "directories": {
     "example": "example"
+  },
+  "dependencies": {
+    "patch-package": "^6.4.7"
   }
 }
